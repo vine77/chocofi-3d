@@ -8,11 +8,10 @@
 
 / {
   behaviors {
-    a_shift: a_shift {
+    lhrm: lhrm {
       compatible = "zmk,behavior-hold-tap";
-      label = "A_SHIFT";
+      label = "L_HRM";
       bindings = <&kp>, <&kp>;
-
       #binding-cells = <2>;
       tapping-term-ms = <200>;
       hold-trigger-key-positions = <6 7 8 9 10 18 19 20 21 22 30 31 32 33 34>;
@@ -20,11 +19,10 @@
       hold-while-undecided;
     };
 
-    semicolon_shift: semicolon_shift {
+    rhrm: rhrm {
       compatible = "zmk,behavior-hold-tap";
-      label = "SEMICOLON_SHIFT";
+      label = "R_HRM";
       bindings = <&kp>, <&kp>;
-
       #binding-cells = <2>;
       tapping-term-ms = <200>;
       hold-while-undecided;
@@ -38,10 +36,10 @@
 
     default_layer {
       bindings = <
-        &trans  &kp Q  &kp W  &kp E  &kp R      &kp T            &kp Y      &kp U       &kp I      &kp O    &kp P     &trans
-        &trans  &kp A  &kp S  &kp D  &kp F      &kp G            &kp H      &kp J       &kp K      &kp L    &kp SEMI  &trans
-        &trans  &kp Z  &kp X  &kp C  &kp V      &kp B            &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH  &trans
-                              &mo 1  &mkp LCLK  &kp BACKSPACE    &kp SPACE  &kp RETURN  &mo 2
+        &trans  &kp Q           &kp W  &kp E      &kp R       &kp T       &kp Y      &kp U    &kp I      &kp O    &kp P              &trans
+        &trans  &lhrm LSHIFT A  &kp S  &kp D      &kp F       &kp G       &kp H      &kp J    &kp K      &kp L    &rhrm RSHIFT SEMI  &trans
+        &trans  &kp Z           &kp X  &kp C      &kp V       &kp B       &kp N      &kp M    &kp COMMA  &kp DOT  &kp FSLH           &trans
+                                       &mo 1      &mkp LCLK   &kp BSPC    &kp SPACE  &kp RET  &mo 2
       >;
     };
 
