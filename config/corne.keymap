@@ -62,5 +62,23 @@
                                   &trans    &kp DEL   &mkp RCLK    &trans     &trans     &trans
       >;
     };
+
+    adjust_layer {
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
+      >;
+    };
+  };
+
+  conditional_layers {
+    compatible = "zmk,conditional-layers";
+
+    tri_layer {
+      if-layers = <1 2>;
+      then-layer = <3>;
+    };
   };
 };
