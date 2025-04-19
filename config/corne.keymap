@@ -11,7 +11,6 @@
   behaviors {
     lhrm: lhrm {
       compatible = "zmk,behavior-hold-tap";
-      label = "L_HRM";
       bindings = <&kp>, <&kp>;
 
       #binding-cells = <2>;
@@ -23,7 +22,6 @@
 
     rhrm: rhrm {
       compatible = "zmk,behavior-hold-tap";
-      label = "R_HRM";
       bindings = <&kp>, <&kp>;
 
       #binding-cells = <2>;
@@ -59,13 +57,13 @@
       #binding-cells = <1>;
       bindings =
         <&macro_press>,
-        <&kp LCTL>,
+        <&kp LCTRL>,
         <&macro_press>,
         <&kp GLOBE &macro_param_1to1>,
         <&macro_release>,
         <&kp MACRO_PLACEHOLDER>,
         <&macro_release>,
-        <&kp LCTL>;
+        <&kp LCTRL>;
     };
   };
 
