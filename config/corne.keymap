@@ -103,7 +103,7 @@
       bindings = <
         &trans  &ctrl_globe DOWN  &ctrl_globe UP  &ctrl_globe LEFT  &ctrl_globe RIGHT  &kp F11           &ctrl_globe R  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LC(LS(LEFT))  &kp LC(LS(RIGHT))  &trans
         &trans  &kp TAB           &trans          &kp LG(LS(TAB))   &kp LG(TAB)        &trans            &kp LEFT       &kp DOWN         &kp UP       &kp RIGHT         &trans             &trans
-        &trans  &kp LS(TAB)       &trans          &trans            &bt BT_SEL 0       &bt BT_CLR_ALL    &kp HOME       &kp PG_DN        &kp PG_UP    &kp END           &trans             &trans
+        &trans  &kp LS(TAB)       &trans          &bt BT_PRV        &bt BT_NXT         &bt BT_CLR_ALL    &kp HOME       &kp PG_DN        &kp PG_UP    &kp END           &trans             &trans
                                                   &trans            &trans             &trans            &trans         &trans           &trans
       >;
     };
