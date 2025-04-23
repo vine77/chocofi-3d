@@ -14,7 +14,6 @@
       bindings = <&kp>, <&kp>;
       compatible = "zmk,behavior-hold-tap";
       hold-while-undecided;
-      retro-tap;
       tapping-term-ms = <200>;
     };
 
@@ -23,7 +22,6 @@
       bindings = <&kp>, <&mkp>;
       compatible = "zmk,behavior-hold-tap";
       hold-while-undecided;
-      retro-tap;
       tapping-term-ms = <200>;
     };
 
