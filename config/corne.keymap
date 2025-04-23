@@ -12,6 +12,7 @@
     hrm: hrm {
       #binding-cells = <2>;
       bindings = <&kp>, <&kp>;
+
       compatible = "zmk,behavior-hold-tap";
       hold-while-undecided;
       tapping-term-ms = <200>;
@@ -20,6 +21,7 @@
     mhrm: mhrm {
       #binding-cells = <2>;
       bindings = <&kp>, <&mkp>;
+
       compatible = "zmk,behavior-hold-tap";
       hold-while-undecided;
       tapping-term-ms = <200>;
@@ -28,6 +30,7 @@
     lhrm: lhrm {
       #binding-cells = <2>;
       bindings = <&kp>, <&kp>;
+
       compatible = "zmk,behavior-hold-tap";
       hold-trigger-key-positions = <6 7 8 9 10 18 19 20 21 22 30 31 32 33 34>;
       hold-while-undecided;
@@ -38,6 +41,7 @@
     rhrm: rhrm {
       #binding-cells = <2>;
       bindings = <&kp>, <&kp>;
+
       compatible = "zmk,behavior-hold-tap";
       hold-trigger-key-positions = <1 2 3 4 5 13 14 15 16 17 25 26 27 28 29>;
       hold-while-undecided;
@@ -101,19 +105,19 @@
 
     base {
       bindings = <
-        &trans  &kp Q           &kp W          &kp E         &kp R         &kp T              &kp Y             &kp U         &kp I         &kp O          &kp P              &trans
-        &trans  &lhrm LSHIFT A  &lhrm LCTRL S  &lhrm LALT D  &lhrm LGUI F  &lhrm GLOBE G      &rhrm GLOBE H     &rhrm RGUI J  &rhrm RALT K  &rhrm RCTRL L  &rhrm RSHIFT SEMI  &trans
-        &trans  &kp Z           &kp X          &kp C         &kp V         &kp B              &kp N             &kp M         &kp FSLH      &kp COMMA      &kp DOT            &trans
+        &trans  &kp Q           &kp W          &kp E         &kp R         &kp T              &kp Y             &kp U         &kp I         &kp O          &kp P             &trans
+        &trans  &lhrm LSHIFT A  &lhrm LCTRL S  &lhrm LALT D  &lhrm LGUI F  &lhrm GLOBE G      &rhrm GLOBE H     &rhrm RGUI J  &rhrm RALT K  &rhrm RCTRL L  &rhrm RSHIFT SQT  &trans
+        &trans  &kp Z           &kp X          &kp C         &kp V         &kp B              &kp N             &kp M         &kp FSLH      &kp COMMA      &kp DOT           &trans
                                                &mo 1         &kp BSPC      &mhrm LGUI LCLK    &hrm RGUI RETURN  &kp SPACE     &mo 2
       >;
     };
 
     sym {
       bindings = <
-        &trans  &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
-        &trans  &kp TILDE  &kp GRAVE  &kp DQT   &kp SQT   &trans       &kp MINUS  &kp PLUS   &kp PIPE   &kp LBRC  &kp RBRC  &trans
-        &trans  &trans     &trans     &trans    &trans    &trans       &kp UNDER  &kp EQUAL  &kp BSLH   &kp LBKT  &kp RBKT  &trans
-                                      &mo 1     &kp DEL   &mkp RCLK    &kp ESC    &kp TAB    &mo 2
+        &trans  &kp EXCL   &kp AT     &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+        &trans  &kp TILDE  &kp GRAVE  &kp COLON  &kp SEMI  &trans       &kp MINUS  &kp PLUS   &kp PIPE   &kp LBRC  &kp RBRC  &trans
+        &trans  &trans     &trans     &trans     &trans    &trans       &kp UNDER  &kp EQUAL  &kp BSLH   &kp LBKT  &kp RBKT  &trans
+                                      &mo 1      &kp DEL   &mkp RCLK    &kp ESC    &kp TAB    &mo 2
       >;
     };
 
