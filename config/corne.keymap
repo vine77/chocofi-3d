@@ -107,10 +107,10 @@
 
     base {
       bindings = <
-        &trans  &kp Q           &kp W          &kp E         &kp R         &kp T            &kp Y             &kp U         &kp I         &kp O          &kp P              &trans
-        &trans  &lhrm LSHIFT A  &lhrm LCTRL S  &lhrm LALT D  &lhrm LGUI F  &lhrm GLOBE G    &rhrm GLOBE H     &rhrm RGUI J  &rhrm RALT K  &rhrm RCTRL L  &rhrm RSHIFT SEMI  &trans
-        &trans  &kp Z           &kp X          &kp C         &kp V         &kp B            &kp N             &kp M         &kp FSLH      &kp COMMA      &kp DOT            &trans
-                                               &mo 1         &kp BSPC      &mkp LCLK        &hrm RGUI RETURN  &kp SPACE     &mo 2
+        &trans  &kp Q           &kp W          &kp E         &kp R         &kp T              &kp Y             &kp U         &kp I         &kp O          &kp P              &trans
+        &trans  &lhrm LSHIFT A  &lhrm LCTRL S  &lhrm LALT D  &lhrm LGUI F  &lhrm GLOBE G      &rhrm GLOBE H     &rhrm RGUI J  &rhrm RALT K  &rhrm RCTRL L  &rhrm RSHIFT SEMI  &trans
+        &trans  &kp Z           &kp X          &kp C         &kp V         &kp B              &kp N             &kp M         &kp FSLH      &kp COMMA      &kp DOT            &trans
+                                               &mo 1         &kp BSPC      &mhrm LGUI LCLK    &hrm RGUI RETURN  &kp SPACE     &mo 2
       >;
     };
 
