@@ -35,19 +35,34 @@
   combos {
     compatible = "zmk,combos";
 
-    combo_esc {
+    combo_lesc {
       bindings = <&kp ESC>;
+      key-positions = <1 2>;
+    };
+
+    combo_resc {
+      bindings = <&kp ESC>;
+      key-positions = <10 9>;
+    };
+
+    combo_ltab {
+      bindings = <&kp TAB>;
       key-positions = <4 3>;
     };
 
-    combo_tab {
+    combo_shift_ltab {
+      bindings = <&kp LS(TAB)>;
+      key-positions = <2 3>;
+    };
+
+    combo_rtab {
       bindings = <&kp TAB>;
       key-positions = <7 8>;
     };
 
-    combo_ls_tab {
-      bindings = <&kp LS(TAB)>;
-      key-positions = <7 6>;
+    combo_shift_rtab {
+      bindings = <&kp RS(TAB)>;
+      key-positions = <6 7>;
     };
   };
 
