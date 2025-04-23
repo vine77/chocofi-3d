@@ -119,7 +119,7 @@
         &trans  &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
         &trans  &kp TILDE  &kp GRAVE  &kp DQT   &kp SQT   &trans       &kp MINUS  &kp PLUS   &kp PIPE   &kp LBRC  &kp RBRC  &trans
         &trans  &trans     &trans     &trans    &trans    &trans       &kp UNDER  &kp EQUAL  &kp BSLH   &kp LBKT  &kp RBKT  &trans
-                                      &mo 1     &kp DEL   &mkp MCLK    &kp ESC    &kp TAB    &mo 2
+                                      &mo 1     &kp DEL   &mkp RCLK    &kp ESC    &kp TAB    &mo 2
       >;
     };
 
@@ -137,7 +137,7 @@
         &trans  &ctrl_globe DOWN  &ctrl_globe UP  &ctrl_globe LEFT  &ctrl_globe RIGHT  &kp F11           &ctrl_globe R  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LC(LS(LEFT))  &kp LC(LS(RIGHT))  &trans
         &trans  &kp TAB           &trans          &kp LG(LS(TAB))   &kp LG(TAB)        &trans            &kp LEFT       &kp DOWN         &kp UP       &kp RIGHT         &trans             &trans
         &trans  &kp LS(TAB)       &trans          &bt BT_PRV        &bt BT_NXT         &bt BT_CLR_ALL    &kp HOME       &kp PG_DN        &kp PG_UP    &kp END           &trans             &trans
-                                                  &trans            &trans             &trans            &trans         &trans           &trans
+                                                  &trans            &trans             &mkp MCLK         &trans         &trans           &trans
       >;
     };
   };
