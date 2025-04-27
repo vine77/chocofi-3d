@@ -133,9 +133,9 @@
 
     nav {
       bindings = <
-        &trans  &ctrl_globe DOWN  &ctrl_globe UP  &ctrl_globe LEFT  &ctrl_globe RIGHT  &kp F11           &ctrl_globe R  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LC(LS(LG(PG_DN)))  &kp LC(LS(PG_UP))  &trans
-        &trans  &trans            &trans          &trans            &trans             &trans            &kp LEFT       &kp DOWN         &kp UP       &kp RIGHT              &trans             &trans
-        &trans  &trans            &trans          &bt BT_PRV        &bt BT_NXT         &bt BT_CLR_ALL    &kp HOME       &kp PG_DN        &kp PG_UP    &kp END                &trans             &trans
+        &trans  &ctrl_globe DOWN  &ctrl_globe UP  &ctrl_globe LEFT  &ctrl_globe RIGHT  &kp F11           &ctrl_globe R  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LC(LS(PG_UP))  &kp LC(LS(PG_DN))  &trans
+        &trans  &trans            &trans          &trans            &trans             &trans            &kp LEFT       &kp DOWN         &kp UP       &kp RIGHT          &trans             &trans
+        &trans  &trans            &trans          &bt BT_PRV        &bt BT_NXT         &bt BT_CLR_ALL    &kp HOME       &kp PG_DN        &kp PG_UP    &kp END            &trans             &trans
                                                   &trans            &trans             &mkp MCLK         &trans         &trans           &trans
       >;
     };
