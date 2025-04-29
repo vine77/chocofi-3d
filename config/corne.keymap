@@ -90,14 +90,12 @@
       compatible = "zmk,behavior-macro-one-param";
       #binding-cells = <1>;
       bindings =
-        <&macro_press>,
-        <&kp LCTRL>,
-        <&macro_press>,
-        <&kp GLOBE &macro_param_1to1>,
-        <&macro_release>,
-        <&kp MACRO_PLACEHOLDER>,
-        <&macro_release>,
-        <&kp LCTRL>;
+        <&macro_press &kp LCTRL>,
+        <&macro_press &kp GLOBE>,
+        <&macro_param_1to1>,
+        <&macro_tap &kp MACRO_PLACEHOLDER>,
+        <&macro_release &kp GLOBE>,
+        <&macro_release &kp LCTRL>;
     };
   };
 
