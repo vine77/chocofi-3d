@@ -90,12 +90,16 @@
       compatible = "zmk,behavior-macro-one-param";
       #binding-cells = <1>;
       bindings =
-        <&macro_press &kp LCTRL>,
-        <&macro_press &kp GLOBE>,
-        <&macro_param_1to1>,
-        <&macro_tap &kp MACRO_PLACEHOLDER>,
-        <&macro_release &kp GLOBE>,
-        <&macro_release &kp LCTRL>;
+        <&macro_press>,
+        <&kp LCTRL>,
+        <&macro_press>,
+        <&kp GLOBE &macro_param_1to1>,
+        <&macro_tap>,
+        <&kp MACRO_PLACEHOLDER>,
+        <&macro_release>,
+        <&kp GLOBE>,
+        <&macro_release>,
+        <&kp LCTRL>;
     };
   };
 
@@ -113,10 +117,10 @@
 
     sym {
       bindings = <
-        &trans  &kp EXCL   &kp AT     &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
-        &trans  &kp TILDE  &kp GRAVE  &kp COLON  &kp SEMI  &trans       &kp MINUS  &kp PLUS   &kp PIPE   &kp LBRC  &kp RBRC  &trans
-        &trans  &trans     &trans     &trans     &trans    &trans       &kp UNDER  &kp EQUAL  &kp BSLH   &kp LBKT  &kp RBKT  &trans
-                                      &mo 1      &kp DEL   &mkp RCLK    &kp ESC    &kp TAB    &mo 2
+        &trans  &kp EXCL   &kp AT     &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+        &trans  &kp GRAVE  &kp TILDE  &kp SEMI  &kp COLON  &trans       &kp MINUS  &kp PLUS   &kp PIPE   &kp LBRC  &kp RBRC  &trans
+        &trans  &trans     &trans     &trans    &trans     &trans       &kp UNDER  &kp EQUAL  &kp BSLH   &kp LBKT  &kp RBKT  &trans
+                                      &mo 1     &kp DEL    &mkp RCLK    &kp ESC    &kp TAB    &mo 2
       >;
     };
 
