@@ -9,3 +9,7 @@
 - [Manfrotto MP3-BK Pocket Support tripods](https://www.manfrotto.com/us-en/pocket-support-large-black-mp3-bk)
 - [Moment Multi-Threaded Mount for MagSafe](https://www.shopmoment.com/products/multi-thread-mount-for-magsafe-1)
 - [Scosche MPLTMSPCH MagicRing MagSafe adapter](https://www.scosche.com/magicring-adhesive-magsafe-ring-2pack)
+
+## Tools
+
+- [ZMK Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)
