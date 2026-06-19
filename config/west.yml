@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: cb00077  # Last-known-good as of 2025-06-02; main moved to Zephyr HWMv2 and broke this config
+      revision: ff09f2d  # Pinned to a main commit for Zephyr 4.1/HWMv2; switch to the v0.4 release tag once it's published
       import: app/west.yml
   self:
     path: config
